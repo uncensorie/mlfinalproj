@@ -95,7 +95,7 @@ Enhances instruction fine-tuning by introducing noise into embeddings during tra
 
 - NEFTune introduces noise into the embedding layers during the fine-tuning process of LLMs. This noise is added to the token embeddings to simulate a form of data augmentation, which helps the model generalize better to unseen instructions or tasks. The noise encourages the model to rely less on exact matches and more on the semantic content of the input, thus improving robustness and performance on instruction-following tasks. NEFTune is particularly useful when fine-tuning with limited or varied instruction data, helping to mitigate overfitting to specific phrasing or examples in the training set.
 
-# This project aims to push the boundaries of AI reasoning by combining cutting-edge datasets and innovative fine-tuning techniques, paving the way for more intelligent, versatile, and structured problem-solving capabilities in LLMs.
+#### This project aims to push the boundaries of AI reasoning by combining cutting-edge datasets and innovative fine-tuning techniques, paving the way for more intelligent, versatile, and structured problem-solving capabilities in LLMs.
 
 ### Preparation
 

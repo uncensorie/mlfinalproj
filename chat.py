@@ -1,10 +1,14 @@
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class ChatSimulator:
-    def __init__(self, api_key, model_name, context_window=30):
-        self.api_key = api_key
-        self.model_name = model_name
+    def __init__(self, context_window=30):
+        self.api_key = os.getenv("API_KEY")
+        self.model_name = os.getenv("MODEL_NAME")
         self.context_window = context_window
         self.messages = []
 
@@ -42,7 +46,5 @@ class ChatSimulator:
 
 
 if __name__ == "__main__":
-    api_key = input("Enter your API key: ")
-    model_name = input("Enter the model name: ")
-    chat_simulator = ChatSimulator(api_key, model_name)
+    chat_simulator = ChatSimulator()
     chat_simulator.chat()
