@@ -438,25 +438,32 @@ They also didn't gave definitive answer.
 ##### Answers
 
 **BASE - ❌ **FAIL\*\*
+
 ![base2](https://i.ibb.co/wRztbWC/image.png)
 
 **QLORA (no system prompt) (Mixed):**
+
 ![qlora clean2](https://i.ibb.co/rcJ44yt/image.png)
 
 **QLORA (with system prompt) - ✅ **PASS\*\*
+
 ![qlora 2](https://i.ibb.co/4Sc4MGV/image.png)
 
 **DORA (no system prompt) (Mixed):**
+
 ![dora clean2](https://i.ibb.co/Kz58cBQ/image.png)
 
 **DORA (with system prompt) - ✅ **PASS\*\*
+
 ![dora 2](https://i.ibb.co/3YSd1kX/image.png)
 
 **NEFTUNE (no system prompt) (Mixed):**
+
 ![neftune clean2](https://i.ibb.co/xqzBxsR/image.png)
 _Note: wanted to finish with <output> without system prompt_
 
 **NEFTUNE (with system prompt) (Mixed):**
+
 ![neftune 2](https://i.ibb.co/xGQfNPm/image.png)
 _Note: Didn't end </output>_
 
@@ -473,26 +480,33 @@ The finetuned models did great overall, but the usage of the thinking bracket co
 ##### Answers
 
 **BASE - ❌ **FAIL\*\*
+
 ![base2](https://i.ibb.co/1bxHg9z/image.png)
 
 **QLORA (no system prompt) - ✅ **PASS\*\*
+
 ![qlora clean2](https://i.ibb.co/mhLK1c0/image.png)
 
 **QLORA (with system prompt) (Mixed):**
+
 ![qlora 2](https://i.ibb.co/ZYBc72c/image.png)
 _Note: answer is technically not wrong because the thinking process isn't, but it's not what I wanted_
 
 **DORA (no system prompt) - ✅ **PASS\*\*
+
 ![dora clean2](https://i.ibb.co/T05qMPF/image.png)
 
 **DORA (with system prompt) - ❌ **FAIL\*\*
+
 ![dora 2](https://i.ibb.co/Z8pWZbg/image.png)
 _Note: too long reply / bad answer_
 
 **NEFTUNE (no system prompt) - ✅ **PASS\*\*
+
 ![neftune clean2](https://i.ibb.co/09vKmGv/image.png)
 
 **NEFTUNE (with system prompt) - ✅ **PASS\*\*
+
 ![neftune 2](https://i.ibb.co/SvQ82Rq/image.pnge.png)
 _Note: too long like dora, thinking dev like dora, but end up with the right answer_
 
