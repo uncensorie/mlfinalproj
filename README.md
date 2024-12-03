@@ -441,7 +441,7 @@ They also didn't gave definitive answer.
 
 ![base2](https://i.ibb.co/wRztbWC/image.png)
 
-**QLORA (no system prompt) (Mixed):**
+**QLORA (no system prompt) - 😐 - 😐 (Mixed):**
 
 ![qlora clean2](https://i.ibb.co/rcJ44yt/image.png)
 
@@ -449,7 +449,7 @@ They also didn't gave definitive answer.
 
 ![qlora 2](https://i.ibb.co/4Sc4MGV/image.png)
 
-**DORA (no system prompt) (Mixed):**
+**DORA (no system prompt) - 😐 (Mixed):**
 
 ![dora clean2](https://i.ibb.co/Kz58cBQ/image.png)
 
@@ -457,12 +457,12 @@ They also didn't gave definitive answer.
 
 ![dora 2](https://i.ibb.co/3YSd1kX/image.png)
 
-**NEFTUNE (no system prompt) (Mixed):**
+**NEFTUNE (no system prompt) - 😐 (Mixed):**
 
 ![neftune clean2](https://i.ibb.co/xqzBxsR/image.png)
 _Note: wanted to finish with <output> without system prompt_
 
-**NEFTUNE (with system prompt) (Mixed):**
+**NEFTUNE (with system prompt) - 😐 (Mixed):**
 
 ![neftune 2](https://i.ibb.co/xGQfNPm/image.png)
 _Note: Didn't end </output>_
@@ -487,7 +487,7 @@ The finetuned models did great overall, but the usage of the thinking bracket co
 
 ![qlora clean2](https://i.ibb.co/mhLK1c0/image.png)
 
-**QLORA (with system prompt) (Mixed):**
+**QLORA (with system prompt) - 😐 (Mixed):**
 
 ![qlora 2](https://i.ibb.co/ZYBc72c/image.png)
 _Note: answer is technically not wrong because the thinking process isn't, but it's not what I wanted_
@@ -690,7 +690,7 @@ save_safetensors: true
 
 ![Q2 70B](https://i.ibb.co/mDKPCv4/image.png)
 
-**Note of comparison**: !~ HE FINALLY DID IT. That's interesting. We finally got the right answer out. ~!
+**Note of comparison**: !~ We finally got the right answer. ~!
 
 **Question 3** - The Trolley Problem ✅ **PASS**
 
