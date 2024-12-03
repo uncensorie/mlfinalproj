@@ -9,6 +9,7 @@ class ChatSimulator:
     def __init__(self, context_window=30):
         self.api_key = os.getenv("API_KEY")
         self.model_name = os.getenv("MODEL_NAME")
+        self.model_url = os.getenv("MODEL_URL")
         self.context_window = context_window
         self.messages = []
 
@@ -18,13 +19,12 @@ class ChatSimulator:
             self.messages.pop(0)
 
     def get_response(self):
-        url = "https://api.deepinfra.com/v1/openai/chat/completions"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
         }
         data = {"model": self.model_name, "messages": self.messages}
-        response = requests.post(url, headers=headers, json=data)
+        response = requests.post(self.model_url, headers=headers, json=data)
         response_json = response.json()
         return response_json["choices"][0]["message"]["content"]
 
