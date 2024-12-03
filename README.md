@@ -28,7 +28,7 @@ The dataset is designed to enhance the model’s ability to:
 
 ### 1. LORA
 
-- LoRA (Low-Rank Adaptation): Reduces memory and computational costs by updating only low-rank matrices, enabling efficient adaptation with minimal parameter changes. https://arxiv.org/abs/2106.09685
+LoRA (Low-Rank Adaptation): Reduces memory and computational costs by updating only low-rank matrices, enabling efficient adaptation with minimal parameter changes. https://arxiv.org/abs/2106.09685
 
 ##### Core Idea:
 
@@ -51,11 +51,11 @@ The dataset is designed to enhance the model’s ability to:
 
 ### 2. DoRA
 
-- DoRA (Weight-Decomposed Low-Rank Adaptation): Builds on LoRA by decomposing pre-trained weights into magnitude and direction components, enhancing fine-tuning precision and efficiency. https://arxiv.org/abs/2402.09353
+DoRA (Weight-Decomposed Low-Rank Adaptation): Builds on LoRA by decomposing pre-trained weights into magnitude and direction components, enhancing fine-tuning precision and efficiency. https://arxiv.org/abs/2402.09353
 
 ##### Core Idea:
 
-- Builds on LoRA but introduces weight decomposition before applying low-rank adaptation, leveraging the observation that decomposing pre-trained weights improves the model's adaptability.
+Builds on LoRA but introduces weight decomposition before applying low-rank adaptation, leveraging the observation that decomposing pre-trained weights improves the model's adaptability.
 
 ##### Method:
 
@@ -74,11 +74,11 @@ The dataset is designed to enhance the model’s ability to:
 
 ### 3. NEFTune
 
-- NEFTune (Noisy Embeddings for Fine-Tuning): Adds noise to embedding layers during fine-tuning to improve generalization and ensure robust performance across varied instruction-based tasks. https://arxiv.org/abs/2310.05914
+NEFTune (Noisy Embeddings for Fine-Tuning): Adds noise to embedding layers during fine-tuning to improve generalization and ensure robust performance across varied instruction-based tasks. https://arxiv.org/abs/2310.05914
 
 ##### Core Idea:
 
-- Enhances instruction fine-tuning by introducing noise into embeddings during training, which improves generalization and robustness of the model for unseen instructions.
+Enhances instruction fine-tuning by introducing noise into embeddings during training, which improves generalization and robustness of the model for unseen instructions.
 
 ##### Method:
 
