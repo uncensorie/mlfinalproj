@@ -1,20 +1,20 @@
 [TOC]
 
-### Introduction: Fine-Tuning LLaMA 3.1 with Tree of Thoughts Reasoning
+# Introduction: Fine-Tuning LLaMA 3.1 with Tree of Thoughts Reasoning
 
 This project focuses on training and fine-tuning a Large Language Model (LLM) to enhance its reasoning capabilities through a structured problem-solving framework. Using the LLaMA 3.1 8B model as the base, the training process employs the high-quality Tree of Thoughts BASE 24k dataset from Hugging Face. The dataset consists of 24,000 question-answer pairs designed to promote structured thinking and iterative reasoning.
 
 Dataset Overview: Tree of Thoughts BASE 24k
 The Tree of Thoughts dataset serves as a foundation for fine-tuning LLMs by emphasizing structured reasoning and problem-solving strategies.
 
-### Key Features:
+## Key Features:
 
 - 24,000 Q&A Pairs: A rich collection of step-by-step solutions to diverse problems.
 - Tree of Thoughts Approach: Answers are organized to reflect clear, logical thought processes.
 - High-Quality Data: Created using Grok and LLaMA 3.1 70B, ensuring premium content.
 - Diverse Topics: Covers a wide range of disciplines to foster versatile reasoning skills.
 
-### Applications:
+## Applications:
 
 The dataset is designed to enhance the model’s ability to:
 
@@ -26,72 +26,72 @@ The dataset is designed to enhance the model’s ability to:
 
 ### Three advanced fine-tuning methods are applied to the dataset to optimize reasoning capabilities:
 
-## 1. LORA
+### 1. LORA
 
 - LoRA (Low-Rank Adaptation): Reduces memory and computational costs by updating only low-rank matrices, enabling efficient adaptation with minimal parameter changes. https://arxiv.org/abs/2106.09685
 
-# Core Idea:
+##### Core Idea:
 
 - LoRA fine-tunes large pre-trained models by adding low-rank trainable matrices to the frozen weights of the original model. This approach significantly reduces the number of trainable parameters while maintaining model performance.
 
-# Method:
+##### Method:
 
 - Decompose weight updates into low-rank matrices.
 - Inject these low-rank adaptations into the pre-trained model without altering its core structure.
 
-# Advantages:
+##### Advantages:
 
 - Efficient in terms of memory and computation.
 - Reduces overfitting by preserving the pre-trained knowledge.
 - Enables rapid and cost-effective fine-tuning for downstream tasks.
 
-# Summary:
+##### Summary:
 
 - LoRA is a method for adapting large language models (LLMs) to new tasks without significantly increasing the model's parameter count. Instead of updating all model parameters, LoRA adds trainable low-rank matrices to each layer of the pre-trained model. These matrices allow for fine-tuning by modifying the attention and feed-forward layers, significantly reducing computational cost and memory usage while maintaining or improving performance. The method freezes the original weights and only the low-rank matrices are optimized, making it efficient for fine-tuning on GPUs with limited memory.
 
-## 2. DoRA
+### 2. DoRA
 
 - DoRA (Weight-Decomposed Low-Rank Adaptation): Builds on LoRA by decomposing pre-trained weights into magnitude and direction components, enhancing fine-tuning precision and efficiency. https://arxiv.org/abs/2402.09353
 
-# Core Idea:
+##### Core Idea:
 
 - Builds on LoRA but introduces weight decomposition before applying low-rank adaptation, leveraging the observation that decomposing pre-trained weights improves the model's adaptability.
 
-# Method:
+##### Method:
 
 - Decompose the pre-trained weights into lower-rank components using techniques like SVD (Singular Value Decomposition).
 - Apply low-rank adaptation (similar to LoRA) on the decomposed weights instead of the original weights.
 
-# Advantages:
+##### Advantages:
 
 - Further reduces computational overhead compared to standard LoRA.
 - Enhances the ability to adapt fine-tuned models to diverse tasks with minimal degradation.
 - Preserves pre-trained features while allowing for better generalization.
 
-# Summary:
+##### Summary:
 
 - DoRA extends the concept of LoRA by decomposing the weight matrices into magnitude and direction components. This decomposition allows for more nuanced adaptation where the magnitude can be tuned independently from the direction. By doing so, DoRA aims to capture both fine and coarse changes in the parameter space during fine-tuning. This method can potentially lead to better adaptation for tasks where the original model's parameter distribution needs significant shifts, offering improved performance over standard LoRA in specific scenarios.
 
-## 3. NEFTune
+### 3. NEFTune
 
 - NEFTune (Noisy Embeddings for Fine-Tuning): Adds noise to embedding layers during fine-tuning to improve generalization and ensure robust performance across varied instruction-based tasks. https://arxiv.org/abs/2310.05914
 
-# Core Idea:
+##### Core Idea:
 
 - Enhances instruction fine-tuning by introducing noise into embeddings during training, which improves generalization and robustness of the model for unseen instructions.
 
-# Method:
+##### Method:
 
 - Inject noise into embedding layers during the fine-tuning process, forcing the model to learn more generalized representations.
 - Uses noise perturbations as a regularization mechanism to prevent overfitting.
 
-# Advantages:
+##### Advantages:
 
 - Improves performance on unseen tasks and instructions.
 - Reduces overfitting and enhances robustness during fine-tuning.
 - Requires minimal changes to the standard fine-tuning process.
 
-# Summary:
+##### Summary:
 
 - NEFTune introduces noise into the embedding layers during the fine-tuning process of LLMs. This noise is added to the token embeddings to simulate a form of data augmentation, which helps the model generalize better to unseen instructions or tasks. The noise encourages the model to rely less on exact matches and more on the semantic content of the input, thus improving robustness and performance on instruction-following tasks. NEFTune is particularly useful when fine-tuning with limited or varied instruction data, helping to mitigate overfitting to specific phrasing or examples in the training set.
 
