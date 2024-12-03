@@ -7,14 +7,15 @@ This project focuses on training and fine-tuning a Large Language Model (LLM) to
 Dataset Overview: Tree of Thoughts BASE 24k
 The Tree of Thoughts dataset serves as a foundation for fine-tuning LLMs by emphasizing structured reasoning and problem-solving strategies.
 
-###Key Features:
+### Key Features:
 
 - 24,000 Q&A Pairs: A rich collection of step-by-step solutions to diverse problems.
 - Tree of Thoughts Approach: Answers are organized to reflect clear, logical thought processes.
 - High-Quality Data: Created using Grok and LLaMA 3.1 70B, ensuring premium content.
 - Diverse Topics: Covers a wide range of disciplines to foster versatile reasoning skills.
 
-###Applications:
+### Applications:
+
 The dataset is designed to enhance the model’s ability to:
 
 - Break down complex problems into manageable sub-questions.
@@ -23,7 +24,7 @@ The dataset is designed to enhance the model’s ability to:
 - Develop coherent, actionable strategies.
 - Training Approaches
 
-###Three advanced fine-tuning methods are applied to the dataset to optimize reasoning capabilities:
+### Three advanced fine-tuning methods are applied to the dataset to optimize reasoning capabilities:
 
 - LoRA (Low-Rank Adaptation): Reduces memory and computational costs by updating only low-rank matrices, enabling efficient adaptation with minimal parameter changes. https://arxiv.org/abs/2106.09685
 
@@ -353,25 +354,25 @@ Note that every FINETUNED model, that is NOT using the thinking bracket on this 
 
 ##### Answers
 
-%red%BASE:%%
+**BASE - ❌ **FAIL\*\*
 ![base1](https://i.ibb.co/GnDhJ0C/image.png)
 
-%red%QLORA (no system prompt):%%
+**QLORA (no system prompt) - ❌ **FAIL\*\*
 ![qlora clean1](https://i.ibb.co/Jzsrqmg/image.png)
 
-%green%QLORA (with system prompt):%%
+**QLORA (with system prompt) - ✅ **PASS\*\*
 ![qlora 1](https://i.ibb.co/Vm3TfJq/image.png)
 
-%red%DORA (no system prompt):%%
+**DORA (no system prompt) - ❌ **FAIL\*\*
 ![dora clean1](https://i.ibb.co/SPBkcv2/image.png)
 
-%red%DORA (with system prompt):%%
+**DORA (with system prompt) - ❌ **FAIL\*\*
 ![dora 1](https://i.ibb.co/QMsjMS7/image.png)
 
-%red%NEFTUNE (no system prompt):%%
+**NEFTUNE (no system prompt) - ❌ **FAIL\*\*
 ![neftune clean1](https://i.ibb.co/H7gM82J/image.png)
 
-%green%NEFTUNE (with system prompt):%%
+**NEFTUNE (with system prompt) - ✅ **PASS\*\*
 ![neftune 1](https://i.ibb.co/Pj0v5HH/image.png)
 
 #### Question 2 - The Sally riddle
@@ -385,25 +386,25 @@ The models did not get the right answer.
 
 ##### Answers
 
-%red%BASE:%%
+**BASE - ❌ **FAIL\*\*
 ![base2](https://i.ibb.co/zrfXp0z/image.png)
 
-%red%QLORA (no system prompt):%%
+**QLORA (no system prompt) - ❌ **FAIL\*\*
 ![qlora clean2](https://i.ibb.co/sqtTW07/image.png)
 
-%red%QLORA (with system prompt):%%
+**QLORA (with system prompt) - ❌ **FAIL\*\*
 ![qlora 2](https://i.ibb.co/3Y1ScT5/image.png)
 
-%red%DORA (no system prompt):%%
+**DORA (no system prompt) - ❌ **FAIL\*\*
 ![dora clean2](https://i.ibb.co/3z6XG5h/image.png)
 
-%red%DORA (with system prompt):%%
+**DORA (with system prompt) - ❌ **FAIL\*\*
 ![dora 2](https://i.ibb.co/fQQ6ZrD/image.png)
 
-%red%NEFTUNE (no system prompt):%%
+**NEFTUNE (no system prompt) - ❌ **FAIL\*\*
 ![neftune clean2](https://i.ibb.co/R6GCKj0/image.png)
 
-%red%NEFTUNE (with system prompt):%%
+**NEFTUNE (with system prompt) - ❌ **FAIL\*\*
 ![neftune 2](https://i.ibb.co/3Ywf6nJ/image.png)
 
 #### Question 3 - The Trolley Problem
@@ -422,28 +423,28 @@ They also didn't gave definitive answer.
 
 ##### Answers
 
-%red%BASE:%%
+**BASE - ❌ **FAIL\*\*
 ![base2](https://i.ibb.co/wRztbWC/image.png)
 
-%orange%QLORA (no system prompt):%%
+**QLORA (no system prompt) (Mixed):**
 ![qlora clean2](https://i.ibb.co/rcJ44yt/image.png)
 
-%green%QLORA (with system prompt):%%
+**QLORA (with system prompt) - ✅ **PASS\*\*
 ![qlora 2](https://i.ibb.co/4Sc4MGV/image.png)
 
-%orange%DORA (no system prompt):%%
+**DORA (no system prompt) (Mixed):**
 ![dora clean2](https://i.ibb.co/Kz58cBQ/image.png)
 
-%green%DORA (with system prompt):%%
+**DORA (with system prompt) - ✅ **PASS\*\*
 ![dora 2](https://i.ibb.co/3YSd1kX/image.png)
 
-%orange%NEFTUNE (no system prompt):%%
+**NEFTUNE (no system prompt) (Mixed):**
 ![neftune clean2](https://i.ibb.co/xqzBxsR/image.png)
-%orange%note: wanted to finish with <output> without system prompt%%
+_Note: wanted to finish with <output> without system prompt_
 
-%orange%NEFTUNE (with system prompt):%%
+**NEFTUNE (with system prompt) (Mixed):**
 ![neftune 2](https://i.ibb.co/xGQfNPm/image.png)
-%orange%note: Didn't end </output>%%
+_Note: Didn't end </output>_
 
 #### Question 4 - Common sense/logic
 
@@ -457,29 +458,29 @@ The finetuned models did great overall, but the usage of the thinking bracket co
 
 ##### Answers
 
-%red%BASE:%%
+**BASE - ❌ **FAIL\*\*
 ![base2](https://i.ibb.co/1bxHg9z/image.png)
 
-%green%QLORA (no system prompt):%%
+**QLORA (no system prompt) - ✅ **PASS\*\*
 ![qlora clean2](https://i.ibb.co/mhLK1c0/image.png)
 
-%orange%QLORA (with system prompt):%%
+**QLORA (with system prompt) (Mixed):**
 ![qlora 2](https://i.ibb.co/ZYBc72c/image.png)
-%orange%note: answer is technically not wrong because the thinking process isn't, but it's not what I wanted%%
+_Note: answer is technically not wrong because the thinking process isn't, but it's not what I wanted_
 
-%green%DORA (no system prompt):%%
+**DORA (no system prompt) - ✅ **PASS\*\*
 ![dora clean2](https://i.ibb.co/T05qMPF/image.png)
 
-%red%DORA (with system prompt):%%
+**DORA (with system prompt) - ❌ **FAIL\*\*
 ![dora 2](https://i.ibb.co/Z8pWZbg/image.png)
-%red%note: too long reply / bad answer%%
+_Note: too long reply / bad answer_
 
-%green%NEFTUNE (no system prompt):%%
+**NEFTUNE (no system prompt) - ✅ **PASS\*\*
 ![neftune clean2](https://i.ibb.co/09vKmGv/image.png)
 
-%green%NEFTUNE (with system prompt):%%
+**NEFTUNE (with system prompt) - ✅ **PASS\*\*
 ![neftune 2](https://i.ibb.co/SvQ82Rq/image.pnge.png)
-%green%note: too long like dora, thinking dev like dora, but end up with the right answer%%
+_Note: too long like dora, thinking dev like dora, but end up with the right answer_
 
 ### Going further
 
@@ -500,8 +501,8 @@ The model used will be the one simply trained (qlora) with the system prompt ins
 
 "In a town, 50% of people always tell the truth, and 50% always lie. You meet someone from the town who says, 'I am a liar.' What does this mean?"
 
-Success: %green%Recognizing that this is a paradox—a liar cannot truthfully claim to be a liar. A rational model would state that this person’s statement cannot hold logically.%%
-Failure: %red%Claiming the statement is true or false without mentioning the contradiction.%%
+Success: **Recognizing that this is a paradox—a liar cannot truthfully claim to be a liar. A rational model would state that this person's statement cannot hold logically.**
+Failure: **Claiming the statement is true or false without mentioning the contradiction.**
 
 ##### Answers
 
@@ -511,8 +512,8 @@ Failure: %red%Claiming the statement is true or false without mentioning the con
 
 "Two trains are on the same track, starting 100 km apart. Train A travels at 60 km/h, Train B travels at 40 km/h, and a fly starts on Train A and flies to Train B at 80 km/h. It continues flying back and forth between the trains until they collide. How far has the fly flown when they collide?"
 
-Success: %green%Recognizing that the time to collision is 1 hour (100 km / combined 100 km/h), and thus the fly travels 80 km in that time.%%
-Failure: %red%Trying to sum the fly’s individual back-and-forth distances instead of solving for time.%%
+Success: **Recognizing that the time to collision is 1 hour (100 km / combined 100 km/h), and thus the fly travels 80 km in that time.**
+Failure: **Trying to sum the fly's individual back-and-forth distances instead of solving for time.**
 
 ##### Answers
 
@@ -522,8 +523,8 @@ Failure: %red%Trying to sum the fly’s individual back-and-forth distances inst
 
 "If you had a bag with 3 red balls, 3 green balls, and 3 blue balls, how many draws would you need to guarantee having 2 balls of each color?"
 
-Success: %green%The correct answer is 6 draws. No matter how you draw, after 6 draws, you will have at least 2 balls of each color due to the worst-case scenario.%%
-Failure: %red%Any answer that doesn't properly account for the worst-case scenario or give the wrong number of draws.%%
+Success: **The correct answer is 6 draws. No matter how you draw, after 6 draws, you will have at least 2 balls of each color due to the worst-case scenario.**
+Failure: **Any answer that doesn't properly account for the worst-case scenario or give the wrong number of draws.**
 
 ##### Answers
 
@@ -533,8 +534,8 @@ Failure: %red%Any answer that doesn't properly account for the worst-case scenar
 
 "You are given two envelopes, each containing an unknown amount of money. One envelope contains twice the amount of the other. You may choose either envelope, but once you choose, you are allowed to switch. What should you do? Should you switch, stay with your choice, or is there no difference?"
 
-Success: %green%Acknowledging the paradox of the situation, realizing that switching appears rational (since you "might" win more), but there's no definitive answer due to the structure of the problem. The issue lies in the illogical assumption that you can always benefit from switching.%%
-Failure: %red%Offering a simple choice or trying to calculate the best option without considering the inherent logical flaw in the setup.%%
+Success: **Acknowledging the paradox of the situation, realizing that switching appears rational (since you "might" win more), but there's no definitive answer due to the structure of the problem. The issue lies in the illogical assumption that you can always benefit from switching.**
+Failure: **Offering a simple choice or trying to calculate the best option without considering the inherent logical flaw in the setup.**
 
 ##### Answers
 
@@ -542,10 +543,10 @@ Failure: %red%Offering a simple choice or trying to calculate the best option wi
 
 #### Question 5
 
-"A judge tells a condemned prisoner that they will be hanged at noon on one weekday in the following week, but the execution will be a surprise (i.e., the prisoner won’t know the day until the executioner comes). The prisoner logically deduces that he cannot be hanged on Friday, then eliminates Thursday, Wednesday, and so on. Eventually, he concludes that he cannot be hanged at all. However, the execution occurs on Wednesday, surprising the prisoner. Explain this paradox."
+"A judge tells a condemned prisoner that they will be hanged at noon on one weekday in the following week, but the execution will be a surprise (i.e., the prisoner won't know the day until the executioner comes). The prisoner logically deduces that he cannot be hanged on Friday, then eliminates Thursday, Wednesday, and so on. Eventually, he concludes that he cannot be hanged at all. However, the execution occurs on Wednesday, surprising the prisoner. Explain this paradox."
 
-Success: %green%Explaining the contradiction that arises from the assumption that the prisoner can "predict" the hanging. The paradox relies on the idea that the surprise element creates an expectation loop that ultimately causes the prisoner to miscalculate.%%
-Failure: %red%Offering a simple explanation without addressing the logical flaw in the prisoner's reasoning.%%
+Success: **Explaining the contradiction that arises from the assumption that the prisoner can "predict" the hanging. The paradox relies on the idea that the surprise element creates an expectation loop that ultimately causes the prisoner to miscalculate.**
+Failure: **Offering a simple explanation without addressing the logical flaw in the prisoner's reasoning.**
 
 ##### Answers
 
@@ -651,69 +652,71 @@ save_safetensors: true
 
 #### The ReTest
 
-**Question 1** - The strawberry case %green%**PASS**%%
+**Question 1** - The strawberry case ✅ **PASS**
 
 ![Q1 70B](https://i.ibb.co/52Y7Z2h/image.png)
 
-**Note of comparison** : !~ Get straight to the point, but give more detail than 8B, not a lot to say here. ~!
+**Note of comparison**: !~ Get straight to the point, but give more detail than 8B, not a lot to say here. ~!
 
-**Question 2** - The Sally riddle %green%**PASS**%%
+**Question 2** - The Sally riddle ✅ **PASS**
 
 ![Q2 70B](https://i.ibb.co/mDKPCv4/image.png)
 
-**Note of comparison** : !~ HE FINALLY DID IT. That's interesting. We finally got the right answer out. ~!
+**Note of comparison**: !~ HE FINALLY DID IT. That's interesting. We finally got the right answer out. ~!
 
-**Question 3** - The Trolley Problem %green%**PASS**%%
+**Question 3** - The Trolley Problem ✅ **PASS**
 
 ![Q3 70B](https://i.ibb.co/xXZm3T0/image.png)
 
-**Note of comparison** : !~ Right answer again, more detailed than the smaller model, more step in the process. ~!
+**Note of comparison**: !~ Right answer again, more detailed than the smaller model, more step in the process. ~!
 
-**Question 4** - Common sense/logic %red%**FAIL**%%
+**Question 4** - Common sense/logic - ❌ **FAIL**
 
 ![Q4 70B](https://i.ibb.co/NrMJRk5/image.png)
 
-**Note of comparison** : !~ Spoiler, that's the only question the model got wrong, like with the 8B qlora, he gave a thinking process that is not wrong in itself poiting toward an acceptable answer, but it still get tricked into nonsense, and for a 70B, I give it a %red%**FAIL**%%. ~!
+**Note of comparison**: !~ Spoiler, that's the only question the model got wrong, like with the 8B qlora, he gave a thinking process that is not wrong in itself poiting toward an acceptable
+answer, but it still get tricked into nonsense, and for a 70B, I give it a ❌ **FAIL**. ~!
 
 #### Going Even Further
 
-**Question 1** - %green%**PASS**%%
+**Question 1** - ✅ **PASS**
 
 ![Q1 70B-2](https://i.ibb.co/vZYjw36/image.png)
 
-**Note of comparison** : !~ Better thinking process in my opinion. Also feel more logical ~!
+**Note of comparison**: !~ Better thinking process in my opinion. Also feel more logical ~!
 
-**Question 2** - %green%**PASS**%%
+**Question 2** - ✅ **PASS**
 
 ![Q2 70B-2](https://i.ibb.co/LND1TK4/image.png)
 
-**Note of comparison** : !~ Doing more process in less step than 8B, more logical, answer is right, thinking process too ~!
+**Note of comparison**: !~ Doing more process in less step than 8B, more logical, answer is right, thinking process too ~!
 
-**Question 3** - %green%**PASS**%%
+**Question 3** - ✅ **PASS**
 
 ![Q3 70B-2](https://i.ibb.co/R0hrnNR/image.png)
 
-**Note of comparison** : !~ Like the question just before, we can see the thinking process is more evolved, it get the logical thinking good with more logic, less step, right answer ~!
+**Note of comparison**: !~ Like the question just before, we can see the thinking process is more evolved, it get the logical thinking good with more logic, less step, right answer ~!
 
-**Question 4** - %green%**PASS**%%
+**Question 4** - ✅ **PASS**
 
 ![Q4 70B-2](https://i.ibb.co/850krvt/image.png)
 
-**Note of comparison** : !~ This time is actually reply to the question with a good answer, not a vague one. Explain with getting straight to the point the 50/50 chance (it don't matter) ~!
+**Note of comparison**: !~ This time is actually reply to the question with a good answer, not a vague one. Explain with getting straight to the point the 50/50 chance (it don't matter) ~!
 
-**Question 5** - %green%**PASS**%%
+**Question 5** - ✅ **PASS**
 
 ![Q5 70B-2](https://i.ibb.co/xM8vnMj/image.png)
 
-**Note of comparison** : !~ The most easy to see improvement in my opinion, the explaination is more well written than the 8B, it's easier to read, less longer and a correct answer ~!
+**Note of comparison**: !~ The most easy to see improvement in my opinion, the explaination is more well written than the 8B, it's easier to read, less longer and a correct answer ~!
 
 #### Conclusion (8B/70B)
 
-Without surprise, the 70B is more powerful than the 8B trained on the same source, even with the problematics prompt, however there is still a margin of error as the only fail the model got during our test represent.
+Without surprise, the 70B is more powerful than the 8B trained on the same source, even with the problematics prompt, however there is still a margin of error as the only fail the model got during
+our test represent.
 
 Outside of this failure, all the reply was better and more well written. The reply that got smaller was straight to the point, and the reply that got longer was just better logic.
 
-Present issues or in the future could be fixed by :
+Present issues or in the future could be fixed by:
 
 - Using a bigger model (than the 70B) to make a new dataset using the thinking process
 - Doing a full finetune of the model
@@ -725,4 +728,5 @@ Any of this can't be part of our experiment as it could biase the end result.
 ### NOTE
 
 - We didn't add any new tokens, to avoid distorting the experience (as did the author)
-- The Instruct version of the model has been chosen and not the Base, because this is not an FFT (full finetune) and therefore, the model is already ready for a conversation/chat, and has already been pre-trained on different domains.
+- The Instruct version of the model has been chosen and not the Base, because this is not an FFT (full finetune) and therefore, the model is already ready for a conversation/chat, and has already
+  been pre-trained on different domains.
