@@ -354,31 +354,31 @@ Note that every FINETUNED model, that is NOT using the thinking bracket on this 
 
 ##### Answers
 
-**BASE - ❌ **FAIL\*\*
+**BASE - ❌ FAIL**
 
 ![base1](https://i.ibb.co/GnDhJ0C/image.png)
 
-**QLORA (no system prompt) - ❌ **FAIL\*\*
+**QLORA (no system prompt) - ❌ FAIL**
 
 ![qlora clean1](https://i.ibb.co/Jzsrqmg/image.png)
 
-**QLORA (with system prompt) - ✅ **PASS\*\*
+**QLORA (with system prompt) - ✅ PASS**
 
 ![qlora 1](https://i.ibb.co/Vm3TfJq/image.png)
 
-**DORA (no system prompt) - ❌ **FAIL\*\*
+**DORA (no system prompt) - ❌ FAIL**
 
 ![dora clean1](https://i.ibb.co/SPBkcv2/image.png)
 
-**DORA (with system prompt) - ❌ **FAIL\*\*
+**DORA (with system prompt) - ❌ FAIL**
 
 ![dora 1](https://i.ibb.co/QMsjMS7/image.png)
 
-**NEFTUNE (no system prompt) - ❌ **FAIL\*\*
+**NEFTUNE (no system prompt) - ❌ FAIL**
 
 ![neftune clean1](https://i.ibb.co/H7gM82J/image.png)
 
-**NEFTUNE (with system prompt) - ✅ **PASS\*\*
+**NEFTUNE (with system prompt) - ✅ PASS**
 
 ![neftune 1](https://i.ibb.co/Pj0v5HH/image.png)
 
@@ -393,31 +393,31 @@ The models did not get the right answer.
 
 ##### Answers
 
-**BASE - ❌ **FAIL\*\*
+**BASE - ❌ FAIL**
 
 ![base2](https://i.ibb.co/zrfXp0z/image.png)
 
-**QLORA (no system prompt) - ❌ **FAIL\*\*
+**QLORA (no system prompt) - ❌ FAIL**
 
 ![qlora clean2](https://i.ibb.co/sqtTW07/image.png)
 
-**QLORA (with system prompt) - ❌ **FAIL\*\*
+**QLORA (with system prompt) - ❌ FAIL**
 
 ![qlora 2](https://i.ibb.co/3Y1ScT5/image.png)
 
-**DORA (no system prompt) - ❌ **FAIL\*\*
+**DORA (no system prompt) - ❌ FAIL**
 
 ![dora clean2](https://i.ibb.co/3z6XG5h/image.png)
 
-**DORA (with system prompt) - ❌ **FAIL\*\*
+**DORA (with system prompt) - ❌ FAIL**
 
 ![dora 2](https://i.ibb.co/fQQ6ZrD/image.png)
 
-**NEFTUNE (no system prompt) - ❌ **FAIL\*\*
+**NEFTUNE (no system prompt) - ❌ FAIL**
 
 ![neftune clean2](https://i.ibb.co/R6GCKj0/image.png)
 
-**NEFTUNE (with system prompt) - ❌ **FAIL\*\*
+**NEFTUNE (with system prompt) - ❌ FAIL**
 
 ![neftune 2](https://i.ibb.co/3Ywf6nJ/image.png)
 
@@ -437,7 +437,7 @@ They also didn't gave definitive answer.
 
 ##### Answers
 
-**BASE - ❌ **FAIL\*\*
+**BASE - ❌ FAIL**
 
 ![base2](https://i.ibb.co/wRztbWC/image.png)
 
@@ -445,7 +445,7 @@ They also didn't gave definitive answer.
 
 ![qlora clean2](https://i.ibb.co/rcJ44yt/image.png)
 
-**QLORA (with system prompt) - ✅ **PASS\*\*
+**QLORA (with system prompt) - ✅ PASS**
 
 ![qlora 2](https://i.ibb.co/4Sc4MGV/image.png)
 
@@ -453,7 +453,7 @@ They also didn't gave definitive answer.
 
 ![dora clean2](https://i.ibb.co/Kz58cBQ/image.png)
 
-**DORA (with system prompt) - ✅ **PASS\*\*
+**DORA (with system prompt) - ✅ PASS**
 
 ![dora 2](https://i.ibb.co/3YSd1kX/image.png)
 
@@ -479,11 +479,11 @@ The finetuned models did great overall, but the usage of the thinking bracket co
 
 ##### Answers
 
-**BASE - ❌ **FAIL\*\*
+**BASE - ❌ FAIL**
 
 ![base2](https://i.ibb.co/1bxHg9z/image.png)
 
-**QLORA (no system prompt) - ✅ **PASS\*\*
+**QLORA (no system prompt) - ✅ PASS**
 
 ![qlora clean2](https://i.ibb.co/mhLK1c0/image.png)
 
@@ -492,20 +492,20 @@ The finetuned models did great overall, but the usage of the thinking bracket co
 ![qlora 2](https://i.ibb.co/ZYBc72c/image.png)
 _Note: answer is technically not wrong because the thinking process isn't, but it's not what I wanted_
 
-**DORA (no system prompt) - ✅ **PASS\*\*
+**DORA (no system prompt) - ✅ PASS**
 
 ![dora clean2](https://i.ibb.co/T05qMPF/image.png)
 
-**DORA (with system prompt) - ❌ **FAIL\*\*
+**DORA (with system prompt) - ❌ FAIL**
 
 ![dora 2](https://i.ibb.co/Z8pWZbg/image.png)
 _Note: too long reply / bad answer_
 
-**NEFTUNE (no system prompt) - ✅ **PASS\*\*
+**NEFTUNE (no system prompt) - ✅ PASS**
 
 ![neftune clean2](https://i.ibb.co/09vKmGv/image.png)
 
-**NEFTUNE (with system prompt) - ✅ **PASS\*\*
+**NEFTUNE (with system prompt) - ✅ PASS**
 
 ![neftune 2](https://i.ibb.co/SvQ82Rq/image.pnge.png)
 _Note: too long like dora, thinking dev like dora, but end up with the right answer_
