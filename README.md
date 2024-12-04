@@ -1,4 +1,8 @@
-[TOC]
+### Instruction to run the code
+
+chat.py simulator is used to simulate the chatting environment that follows openAI chat completions API format. OpenAI compatible chat completions URL is required, model name and api key in a .env file that follows the same format as .env.example.
+The config files are used to fine-tune the model, and are used to train the model with the dataset. Axolotl.ipynb is used to train the model and upload the model to huggingface. Following that the model should be hosten somewhere, for this I do hosting on Deepinfra.com
+Once I obtain the model and URL, I use the chat.py simulator to test the model.
 
 # Introduction: Fine-Tuning LLaMA 3.1 with Tree of Thoughts Reasoning
 
